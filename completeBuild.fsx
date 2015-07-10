@@ -62,7 +62,7 @@ Target "NUnitTest" (fun _ ->
 )
 
 Target "FxCop" (fun _ ->
-    !+ (buildDir + @"\**\*.dll")
+    !! (buildDir + @"\**\*.dll")
       ++ (buildDir + @"\**\*.exe")
         |> Scan
         |> FxCop (fun p ->
@@ -72,7 +72,7 @@ Target "FxCop" (fun _ ->
 )
 
 Target "Zip" (fun _ ->
-    !+ (buildDir + "\**\*.*")
+    !! (buildDir + "\**\*.*")
         -- "*.zip"
         |> Scan
         |> Zip buildDir (deployDir + "Calculator." + version + ".zip")
