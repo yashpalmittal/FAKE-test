@@ -1,8 +1,0 @@
-SRCSRV: ini ------------------------------------------------
-VERSION=2
-SRCSRV: variables ------------------------------------------
-SRCSRVVERCTRL=https
-SRCSRVTRG=https://raw.github.com/fsharp/FAKE/540ebb48eac2eee78cb3cb933a82bcd9c2aa55ae/%var2%
-SRCSRV: source files ---------------------------------------
-C:\code\fake\src\app\Fake.Gallio\GallioHelper.fs*src/app/Fake.Gallio/GallioHelper.fs
-SRCSRV: end ------------------------------------------------
